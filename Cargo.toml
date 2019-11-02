@@ -5,7 +5,7 @@ authors = ["jD91mZM2 <me@krake.one>"]
 edition = "2018"
 
 [dependencies]
-easyfuse = { path = "../easyfuse" }
+easyfuse = { git = "https://gitlab.com/jD91mZM2/easyfuse", rev = "705376759be3c2ed4e3f08ff1b0e333abeee8f80" }
 env_logger = "0.7.1"
 fuse = "0.3.1"
 json5 = "0.2.5"

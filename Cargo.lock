@@ -82,7 +82,7 @@ dependencies = [
 name = "configfs"
 version = "0.1.0"
 dependencies = [
- "easyfuse 0.1.0",
+ "easyfuse 0.1.0 (git+https://gitlab.com/jD91mZM2/easyfuse?rev=705376759be3c2ed4e3f08ff1b0e333abeee8f80)",
  "env_logger 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "fuse 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "json5 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -111,6 +111,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "easyfuse"
 version = "0.1.0"
+source = "git+https://gitlab.com/jD91mZM2/easyfuse?rev=705376759be3c2ed4e3f08ff1b0e333abeee8f80#705376759be3c2ed4e3f08ff1b0e333abeee8f80"
 dependencies = [
  "bitflags 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "fuse 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -541,6 +542,7 @@ dependencies = [
 "checksum clap 2.33.0 (registry+https://github.com/rust-lang/crates.io-index)" = "5067f5bb2d80ef5d68b4c87db81601f0b75bca627bc2ef76b141d7b846a3c6d9"
 "checksum digest 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)" = "f3d0c8c8752312f9713efd397ff63acb9f85585afbf179282e720e7704954dd5"
 "checksum dtoa 0.4.4 (registry+https://github.com/rust-lang/crates.io-index)" = "ea57b42383d091c85abcc2706240b94ab2a8fa1fc81c10ff23c4de06e2a90b5e"
+"checksum easyfuse 0.1.0 (git+https://gitlab.com/jD91mZM2/easyfuse?rev=705376759be3c2ed4e3f08ff1b0e333abeee8f80)" = "<none>"
 "checksum env_logger 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)" = "44533bbbb3bb3c1fa17d9f2e4e38bbbaf8396ba82193c4cb1b6445d711445d36"
 "checksum fake-simd 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "e88a8acf291dafb59c2d96e8f59828f3838bb1a70398823ade51a84de6a6deed"
 "checksum fuse 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)" = "80e57070510966bfef93662a81cb8aa2b1c7db0964354fa9921434f04b9e8660"
