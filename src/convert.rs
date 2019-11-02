@@ -29,7 +29,7 @@ impl ConversionKind {
             Self::Root => panic!("can't call file() on root conversion"),
             Self::Json => "config.json",
             Self::Toml => "config.toml",
-            Self::Yaml => "config.yaml",
+            Self::Yaml => "config.yml",
         }
     }
     pub fn guess(name: &OsStr) -> Result<Self> {
@@ -37,7 +37,7 @@ impl ConversionKind {
         match path.extension().and_then(|n| n.to_str()) {
             Some("json") => Ok(Self::Json),
             Some("toml") => Ok(Self::Toml),
-            Some("yaml") => Ok(Self::Yaml),
+            Some("yml")  => Ok(Self::Yaml),
             _ => {
                 warn!("Can't guess config kind from file description of: {}", path.display());
                 Err(libc::ENAMETOOLONG)
