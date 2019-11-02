@@ -7,6 +7,8 @@ pkgs.mkShell {
   # Libraries to be installed
   buildInputs = with pkgs; [ fuse ];
 
+  RUST_LOG = "trace";
+
   shellHook = ''
     # Let wrappers take precedence.
     export PATH="/var/run/wrappers/bin:$PATH"
